@@ -1,0 +1,10 @@
+<app-add-schedule
+    (addSched)="addSched($event)" 
+    >
+</app-add-schedule>
+<app-schedule-time 
+    *ngFor="let scheds of sched"
+    [sched]="scheds"
+    (deleteSched)="deleteSched($event)" 
+    >
+</app-schedule-time>
